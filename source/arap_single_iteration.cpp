@@ -8,6 +8,7 @@ void arap_single_iteration(
   const Eigen::MatrixXd & bc,
   Eigen::MatrixXd & U)
 {
+#ifdef USE_ALGO_1
     //code 1
     {
         int N = U.rows();
@@ -31,29 +32,31 @@ void arap_single_iteration(
         igl::min_quad_with_fixed_solve(data, K * R, bc,
             Eigen::MatrixXd(), U);
     }
+#endif
 
-
+#ifdef USE_ALGO_2
     //code 2
     {
-        //const int size = U.rows();
-        //const int dims = U.cols();
+        const int size = U.rows();
+        const int dims = U.cols();
 
-        //const Eigen::MatrixXd C = K.transpose() * U;
+        const Eigen::MatrixXd C = K.transpose() * U;
 
-        //assert(size * 3 == C.rows());
+        assert(size * 3 == C.rows());
 
-        //Eigen::MatrixXd R(C.rows(), C.cols());
+        Eigen::MatrixXd R(C.rows(), C.cols());
 
-        //// Compute R from K using closest rotation
-        //for (int k = 0; k < size; k++) {
-        //    Eigen::Matrix3d Ck = C.block<3, 3>(3 * k, 0);
-        //    Eigen::Matrix3d Rk(3, 3);
+        // Compute R from K using closest rotation
+        for (int k = 0; k < size; k++) {
+            Eigen::Matrix3d Ck = C.block<3, 3>(3 * k, 0);
+            Eigen::Matrix3d Rk(3, 3);
 
-        //    igl::polar_svd3x3(Ck, Rk);
+            igl::polar_svd3x3(Ck, Rk);
 
-        //    R.block<3, 3>(3 * k, 0) = Rk;
-        //}
+            R.block<3, 3>(3 * k, 0) = Rk;
+        }
 
-        //min_quad_with_fixed_solve(data, K * R, bc, Eigen::MatrixXd::Zero(0, dims), U);
+        min_quad_with_fixed_solve(data, K * R, bc, Eigen::MatrixXd::Zero(0, dims), U);
     }
+#endif
 }

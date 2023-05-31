@@ -86,7 +86,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>include;E:\dev\libigl-2.4.0\build\install\include;E:\dev\libigl-2.4.0\include\igl;E:\dev\libigl-2.4.0\include;E:\dev\glad_3.3_core\include;E:\dev\glfw-3.3.7\build\install\include;E:\dev\eigen-3.3.9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;E:\dev\libigl-2.4.0\build\install\include;E:\dev\libigl-2.4.0\include\igl;E:\dev\libigl-2.4.0\include;E:\dev\glad_4.6_core\include;E:\dev\glfw-3.3.7\build\install\include;E:\dev\eigen-3.3.9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -100,13 +100,14 @@
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>include;E:\dev\libigl-2.4.0\build\install\include;E:\dev\libigl-2.4.0\include\igl;E:\dev\libigl-2.4.0\include;E:\dev\glad_3.3_core\include;E:\dev\glfw-3.3.7\build\install\include;E:\dev\eigen-3.3.9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;E:\dev\libigl-2.4.0\build\install\include;E:\dev\libigl-2.4.0\include\igl;E:\dev\libigl-2.4.0\include;E:\dev\glad_4.6_core\include;E:\dev\glfw-3.3.7\build\install\include;E:\dev\eigen-3.3.9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>include;E:\dev\libigl-2.4.0\build\install\include;E:\dev\libigl-2.4.0\include\igl;E:\dev\libigl-2.4.0\include;E:\dev\glad_3.3_core\include;E:\dev\glfw-3.3.7\build\install\include;E:\dev\eigen-3.3.9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;E:\dev\libigl-2.4.0\build\install\include;E:\dev\libigl-2.4.0\include\igl;E:\dev\libigl-2.4.0\include;E:\dev\glad_4.6_core\include;E:\dev\glfw-3.3.7\build\install\include;E:\dev\eigen-3.3.9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -129,7 +130,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>include;E:\dev\libigl-2.4.0\build\install\include;E:\dev\libigl-2.4.0\include\igl;E:\dev\libigl-2.4.0\include;E:\dev\glad_3.3_core\include;E:\dev\glfw-3.3.7\build\install\include;E:\dev\eigen-3.3.9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;E:\dev\libigl-2.4.0\build\install\include;E:\dev\libigl-2.4.0\include\igl;E:\dev\libigl-2.4.0\include;E:\dev\glad_4.6_core\include;E:\dev\glfw-3.3.7\build\install\include;E:\dev\eigen-3.3.9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
@@ -146,10 +147,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>include;E:\dev\libigl-2.4.0\build\install\include;E:\dev\libigl-2.4.0\include\igl;E:\dev\libigl-2.4.0\include;E:\dev\glad_3.3_core\include;E:\dev\glfw-3.3.7\build\install\include;E:\dev\eigen-3.3.9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;E:\dev\libigl-2.4.0\build\install\include;E:\dev\libigl-2.4.0\include\igl;E:\dev\libigl-2.4.0\include;E:\dev\glad_4.6_core\include;E:\dev\glfw-3.3.7\build\install\include;E:\dev\eigen-3.3.9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>include;E:\dev\libigl-2.4.0\build\install\include;E:\dev\libigl-2.4.0\include\igl;E:\dev\libigl-2.4.0\include;E:\dev\glad_3.3_core\include;E:\dev\glfw-3.3.7\build\install\include;E:\dev\eigen-3.3.9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;E:\dev\libigl-2.4.0\build\install\include;E:\dev\libigl-2.4.0\include\igl;E:\dev\libigl-2.4.0\include;E:\dev\glad_4.6_core\include;E:\dev\glfw-3.3.7\build\install\include;E:\dev\eigen-3.3.9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -172,7 +173,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>include;E:\dev\libigl-2.4.0\build\install\include;E:\dev\libigl-2.4.0\include\igl;E:\dev\libigl-2.4.0\include;E:\dev\glad_3.3_core\include;E:\dev\glfw-3.3.7\build\install\include;E:\dev\eigen-3.3.9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;E:\dev\libigl-2.4.0\build\install\include;E:\dev\libigl-2.4.0\include\igl;E:\dev\libigl-2.4.0\include;E:\dev\glad_4.6_core\include;E:\dev\glfw-3.3.7\build\install\include;E:\dev\eigen-3.3.9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
@@ -189,10 +190,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>include;E:\dev\libigl-2.4.0\build\install\include;E:\dev\libigl-2.4.0\include\igl;E:\dev\libigl-2.4.0\include;E:\dev\glad_3.3_core\include;E:\dev\glfw-3.3.7\build\install\include;E:\dev\eigen-3.3.9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;E:\dev\libigl-2.4.0\build\install\include;E:\dev\libigl-2.4.0\include\igl;E:\dev\libigl-2.4.0\include;E:\dev\glad_4.6_core\include;E:\dev\glfw-3.3.7\build\install\include;E:\dev\eigen-3.3.9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>include;E:\dev\libigl-2.4.0\build\install\include;E:\dev\libigl-2.4.0\include\igl;E:\dev\libigl-2.4.0\include;E:\dev\glad_3.3_core\include;E:\dev\glfw-3.3.7\build\install\include;E:\dev\eigen-3.3.9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;E:\dev\libigl-2.4.0\build\install\include;E:\dev\libigl-2.4.0\include\igl;E:\dev\libigl-2.4.0\include;E:\dev\glad_4.6_core\include;E:\dev\glfw-3.3.7\build\install\include;E:\dev\eigen-3.3.9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -215,12 +216,12 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>include;E:\dev\libigl-2.4.0\build\install\include;E:\dev\libigl-2.4.0\include\igl;E:\dev\libigl-2.4.0\include;E:\dev\glad_3.3_core\include;E:\dev\glfw-3.3.7\build\install\include;E:\dev\eigen-3.3.9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;E:\dev\libigl-2.4.0\build\install\include;E:\dev\libigl-2.4.0\include\igl;E:\dev\libigl-2.4.0\include;E:\dev\glad_4.6_core\include;E:\dev\glfw-3.3.7\build\install\include;E:\dev\eigen-3.3.9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <Optimization>Disabled</Optimization>
+      <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
@@ -231,10 +232,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>include;E:\dev\libigl-2.4.0\build\install\include;E:\dev\libigl-2.4.0\include\igl;E:\dev\libigl-2.4.0\include;E:\dev\glad_3.3_core\include;E:\dev\glfw-3.3.7\build\install\include;E:\dev\eigen-3.3.9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;E:\dev\libigl-2.4.0\build\install\include;E:\dev\libigl-2.4.0\include\igl;E:\dev\libigl-2.4.0\include;E:\dev\glad_4.6_core\include;E:\dev\glfw-3.3.7\build\install\include;E:\dev\eigen-3.3.9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>include;E:\dev\libigl-2.4.0\build\install\include;E:\dev\libigl-2.4.0\include\igl;E:\dev\libigl-2.4.0\include;E:\dev\glad_3.3_core\include;E:\dev\glfw-3.3.7\build\install\include;E:\dev\eigen-3.3.9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;E:\dev\libigl-2.4.0\build\install\include;E:\dev\libigl-2.4.0\include\igl;E:\dev\libigl-2.4.0\include;E:\dev\glad_4.6_core\include;E:\dev\glfw-3.3.7\build\install\include;E:\dev\eigen-3.3.9;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -256,8 +257,8 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="E:\dev\glad_4.6_core\src\glad.c" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="E:\dev\glad_3.3_core\src\glad.c" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="ZERO_CHECK.vcxproj">

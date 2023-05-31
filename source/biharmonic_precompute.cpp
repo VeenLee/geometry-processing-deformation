@@ -3,6 +3,7 @@
 #include <igl/cotmatrix.h>
 #include <igl/massmatrix.h>
 #include <igl/invert_diag.h>
+#include "../include/algorithm.h"
 
 void biharmonic_precompute(
   const Eigen::MatrixXd & V,

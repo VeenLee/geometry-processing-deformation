@@ -1,6 +1,7 @@
 #include "biharmonic_solve.h"
 #include <igl/min_quad_with_fixed.h>
 #include <igl/harmonic.h>
+#include "../include/algorithm.h"
 
 void biharmonic_solve(
   const igl::min_quad_with_fixed_data<double> & data,
