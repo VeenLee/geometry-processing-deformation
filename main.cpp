@@ -59,7 +59,7 @@ int main(int argc, char *argv[])
 
   // Load input meshes
   igl::read_triangle_mesh(
-    (argc>1?argv[1]:"./data/decimated-knight.off"),V,F);
+    (argc>1?argv[1]:"./data/fangqikai.ply"),V,F);
   U = V;
   igl::opengl::glfw::Viewer viewer;
   std::cout<<R"(
@@ -137,7 +137,8 @@ R,r      Reset control points
         long c;
         bary.maxCoeff(&c);
         Eigen::RowVector3d new_c = V.row(F(fid,c));
-        if(s.CV.size()==0 || (s.CV.rowwise()-new_c).rowwise().norm().minCoeff() > 0)
+        __int64 size = s.CV.size();
+        if(size ==0 || (s.CV.rowwise()-new_c).rowwise().norm().minCoeff() > 0)
         {
           push_undo();
           s.CV.conservativeResize(s.CV.rows()+1,3);

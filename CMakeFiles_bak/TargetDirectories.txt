@@ -1,0 +1,4 @@
+D:/geometry-processing-deformation/CMakeFiles/core.dir
+D:/geometry-processing-deformation/CMakeFiles/deformation.dir
+D:/geometry-processing-deformation/CMakeFiles/ALL_BUILD.dir
+D:/geometry-processing-deformation/CMakeFiles/ZERO_CHECK.dir

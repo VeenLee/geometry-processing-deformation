@@ -4,7 +4,9 @@
     <ClCompile Include="D:\geometry-processing-deformation\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\dev\glad_3.3_core\src\glad.c" />
+    <ClCompile Include="E:\dev\glad_3.3_core\src\glad.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="D:\geometry-processing-deformation\CMakeLists.txt" />
