@@ -11,4 +11,7 @@
       <UniqueIdentifier>{7E6BB16E-8C6D-3980-B54C-52B6F74081EC}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="algorithm.h" />
+  </ItemGroup>
 </Project>
