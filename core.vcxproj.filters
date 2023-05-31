@@ -12,6 +12,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="algorithm.h" />
+    <ClInclude Include="include\algorithm.h" />
   </ItemGroup>
 </Project>
