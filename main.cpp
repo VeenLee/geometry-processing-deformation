@@ -59,7 +59,7 @@ int main(int argc, char *argv[])
 
   // Load input meshes
   igl::read_triangle_mesh(
-    (argc>1?argv[1]:"./data/fangqikai.ply"),V,F);
+    (argc>1?argv[1]:"./data/test.ply"),V,F);
   U = V;
   igl::opengl::glfw::Viewer viewer;
   std::cout<<R"(
